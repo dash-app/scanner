@@ -11,7 +11,7 @@ init()
 prev = []
 while True:
     # previous hexcode [[0x00, 0x00]...]
-    r = irscanner.rec(config)
+    r = irscanner.rec()
     arr = [r[i:i+2] for i in range(0, len(r), 2)]
     s = util.aeha.format(arr)
     for i in range(0, len(s)):
